@@ -73,7 +73,7 @@ function arecover()
 	end)
 end
 
-b:Toggle("Inf Wins",function(bool)
+b:Toggle("Inf Wins (Enable, then get 1 win)",function(bool)
     getgenv().infwins = bool
     if bool then
         infwins()
