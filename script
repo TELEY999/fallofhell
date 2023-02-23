@@ -36,7 +36,7 @@ function infwins()
 	spawn(function()
 		while getgenv().infwins == true do
             local win = game.workspace.Map.Content.Finish.Start.Position
-            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(win + Vector3.new(0, 5, 0))
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(win + Vector3.new(0, 20, 0))
             game:GetService("ReplicatedStorage").Remotes.Game.Win:FireServer()
             task.wait(0.1)
 		end
